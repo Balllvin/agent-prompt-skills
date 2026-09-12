@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orchestrate Subagents"
+  short_description: "Parent implements; sub-agents take bounded parts"
+  default_prompt: "Use $orchestrate-subagents. You are the parent agent. Keep the user task and primary file edits. Assign only bounded helper sub-tasks. Write each child prompt with an output contract, a checkable done test, allowed and forbidden files, and Unslop. Abort if a Goal restates the full user request or workers would cover every product file while you edit none."

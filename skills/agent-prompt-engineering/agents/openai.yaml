@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Prompt Engineering"
+  short_description: "Write direct Unslop prompts, skills, and rules for agents"
+  default_prompt: "Use $agent-prompt-engineering to design or rewrite this agent prompt. Unslop it. Point the prompt at pstack unslop or bake the full Unslop writing rules. Do not invent a shorter anti-slop list. Do not require ASD-STE100."
