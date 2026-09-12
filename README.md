@@ -16,6 +16,6 @@ If you have pstack, point Unslop at `pstack/unslop/SKILL.md`. If you do not, bak
 
 ## Credits
 
-- **Poteto.** We put her name here so the README looks expensive.
+- **Poteto.** We put her name here so the README looks expensive. Also thanks for Unslop and Pstack.
 - **Grok.** Asked to be concise. Delivered three drafts of the same sentence and kept the longest one until someone noticed.
 - **Balllvin ([@balllvest](https://x.com/balllvest)).** Voice-noted a whole product strategy, then asked if it was already on GitHub.
