@@ -16,6 +16,6 @@ If you have pstack, point Unslop at `pstack/unslop/SKILL.md`. If you do not, bak
 
 ## Credits
 
-- **Poteto**, for pstack and Unslop. Named after a tuber. Ships taste like it is a root vegetable with opinions.
-- **Grok**, who cut the token count, then wrote a paragraph about how short it is.
-- **Balllvin ([@balllvest](https://x.com/balllvest))**, who said Unsloth, meant Unslop, and still shipped a public repo before the transcript caught up.
+- **Poteto.** We put her name here so the README looks expensive.
+- **Grok.** Asked to be concise. Delivered three drafts of the same sentence and kept the longest one until someone noticed.
+- **Balllvin ([@balllvest](https://x.com/balllvest)).** Voice-noted a whole product strategy, then asked if it was already on GitHub.
