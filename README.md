@@ -16,6 +16,6 @@ If you have pstack, point Unslop at `pstack/unslop/SKILL.md`. If you do not, bak
 
 ## Credits
 
-- **Poteto**, for pstack. Unslop, poteto-mode, and the house rules these skills steal from without pasting the whole plugin. The good taste is theirs. The remaining slop is ours.
-- **Grok**, for sitting in the repo, cutting tokens, and pretending that "just make the skill shorter" is a personality.
-- **Balllvin ([@balllvest](https://x.com/balllvest))**, who filed the request as a voice note, said Unsloth when he meant Unslop, then asked for a public repo like it was nothing. Tokenmaxxing in the About. Human in the loop. Sometimes the loop is a voice memo.
+- **Poteto**, for pstack and Unslop. Named after a tuber. Ships taste like it is a root vegetable with opinions.
+- **Grok**, who cut the token count, then wrote a paragraph about how short it is.
+- **Balllvin ([@balllvest](https://x.com/balllvest))**, who said Unsloth, meant Unslop, and still shipped a public repo before the transcript caught up.
