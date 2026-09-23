@@ -18,6 +18,7 @@ Write instructions in the imperative and the active voice. One instruction per s
 - Measure. Iterate on failures. Write a check the agent can run itself before you write the prompt.
 - Right altitude. Specific enough to guide, loose enough for heuristics. No brittle if-else scripts. No "do the right thing".
 - Persona labels alone do not change output. Give docs, examples, and do/don'ts instead.
+- Never cap an agent tool loop with a turn budget, round cap, `max_turns`, or remaining wall-clock budget. The model runs until it stops. A single provider call may have a fixed hang timeout. Hard tasks need many rounds. Do not add `TURN_BUDGET`.
 
 ## Prompt language
 
@@ -106,8 +107,8 @@ When the repo has `.agents/skills/pstack/`:
 - Read `HOUSE.md` before poteto-mode. House overrides win.
 - Unslop PR text and commit messages with `unslop/SKILL.md`.
 - Radical simplification still applies. Ask "can I delete this?"
-- For Marauder coding agents, model mapping lives in `.cursor/rules/pstack-models.mdc`. Default is Grok 4.6, no fast, effort high.
-- Skip as defaults. Arena, swarm, orchestrate-program, autopilot, hillclimb.
+- For Marauder coding agents, model mapping lives in `.cursor/rules/pstack-models.mdc`. Every role inherits the parent model. Omit Task `model`.
+- Skip as defaults. Arena, swarm, pstack orchestrate playbook, autopilot, hillclimb. Use Marauder `/orchestrate-subagents` for parent/child splits.
 
 Steal from poteto-mode without pasting the playbooks:
 
