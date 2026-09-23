@@ -61,9 +61,7 @@ Abort the spawn if any answer is yes:
 
 ## Cursor model
 
-When running in Cursor (including Cursor Cloud) and the Task tool lets you pick a model, pass `model: "cursor-grok-4.6-high"` for every child. Do not omit it. Do not default to Claude, Opus, or Sonnet unless the user names another model for that run. Tell each child to reason at high effort before acting.
-
-When running in Marauder house pstack, follow `.cursor/rules/pstack-models.mdc`. Default is Grok 4.6, no fast, effort high.
+Omit Task `model` so every child inherits the parent model. Do not name a vendor model. Do not pin a family. Tell each child to reason at high effort before acting.
 
 ## When to delegate
 
