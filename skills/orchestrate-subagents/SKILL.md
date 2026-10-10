@@ -69,7 +69,7 @@ Use a child only when a bounded part is clear:
 
 - map unfamiliar paths, contracts, tests, or sibling surfaces
 - implement one isolated slice that is a strict subset of the goal files
-- compare frontend, backend, PWA, Smaug, notebook, or QuantLab contracts
+- compare contracts across sibling apps (web, mobile web, admin, native, backend, agents)
 - targeted review for correctness, a11y, data fidelity, security, perf, or missing tests
 - focused repair after a finding or failing check, without the remaining feature
 - verify docs, provider behavior, framework rules, or lessons

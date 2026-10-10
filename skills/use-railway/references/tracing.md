@@ -27,15 +27,15 @@ Tracing is two switches on each service instance, so they are set per service an
 Both take `projectId` and an optional `environmentId`. `describe-service` reports the same tracing state for one service in the environment it was asked about.
 
 ```text
-Get tracing for project 6adb5ae3-0e3a-4ead-b42c-1fd36f217ffb in environment <environment-id>
+Get tracing for project <project-id> in environment <environment-id>
 ```
 
 ```text
-Set service tracing for project 6adb5ae3-0e3a-4ead-b42c-1fd36f217ffb, service <service-id>, environment <environment-id>: tracingEnabled true
+Set service tracing for project <project-id>, service <service-id>, environment <environment-id>: tracingEnabled true
 ```
 
 ```text
-Set service tracing for project 6adb5ae3-0e3a-4ead-b42c-1fd36f217ffb, service <service-id>, environment <environment-id>: autoInstrumentationEnabled true
+Set service tracing for project <project-id>, service <service-id>, environment <environment-id>: autoInstrumentationEnabled true
 ```
 
 `set-service-tracing` warns when it switches auto-instrumentation on for a service whose tracing is off: the switch does nothing until tracing is enabled too. Without Railway MCP or `railway trace`, the public `serviceInstanceUpdate` mutation sets the same fields through `railway api`, and the environment's service instances carry them for reading; see [request.md](request.md). That fallback needs an authenticated CLI, which a cloud agent's chat session does not have.
@@ -254,11 +254,11 @@ Traces are read through **Remote MCP** (the default agent path), `railway trace 
 Both take `projectId` and an optional `environmentId`; omit it and the `production` environment is used, so pass the ID explicitly when the user is looking at another environment. Traces belong to the environment they were exported from.
 
 ```text
-List traces for project 6adb5ae3-0e3a-4ead-b42c-1fd36f217ffb in environment <environment-id> with filter "@status:error"
+List traces for project <project-id> in environment <environment-id> with filter "@status:error"
 ```
 
 ```text
-Get trace 4bf92f3577b34da6a3ce929d0e0e4736 for project 6adb5ae3-0e3a-4ead-b42c-1fd36f217ffb
+Get trace 4bf92f3577b34da6a3ce929d0e0e4736 for project <project-id>
 ```
 
 `filter` uses the same syntax as logs: `@status:error`, `@component:edge AND @duration:>1000`, `@service:api AND @kind:client`, `@http.route:/checkout AND @http.response.status_code:500`, `@name:SELECT*`. Built-in fields are `trace`, `span`, `name`, `serviceName`, `service`, `deployment`, `replica`, `component` (`edge`, `proxy`, `service`), `kind`, `status`, `duration` (ms); any other `@key` matches a span or resource attribute, free text matches the span name, and `-` negates. Narrow the filter or the window before raising `limit`.

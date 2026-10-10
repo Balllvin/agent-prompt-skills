@@ -1,0 +1,4 @@
+interface:
+  display_name: "Layered spec"
+  short_description: "Spec-only layers 0-6 before multi-surface product work"
+  default_prompt: "Use $layered-spec. Write a spec-only plan PR under product-specs/ with layers 0-6 (problem, acceptance, surfaces, cleaners, platform, non-goals, ship slices). Map live owners. Name the remaining way. Do not implement the product. Human surfaces must not present JSON. Unslop. Reply with the plan PR URL and the slice table."

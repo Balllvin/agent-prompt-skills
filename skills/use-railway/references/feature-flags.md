@@ -28,11 +28,11 @@ Prefer **Remote MCP** tools when OAuth-scoped project access is enough:
 Always pass explicit `projectId` (from a Railway URL or `railway status --json`).
 
 ```text
-List feature flags for project 6adb5ae3-0e3a-4ead-b42c-1fd36f217ffb
+List feature flags for project <project-id>
 ```
 
 ```text
-Set feature flag checkout-v2 on project 6adb5ae3-0e3a-4ead-b42c-1fd36f217ffb to true (bool)
+Set feature flag checkout-v2 on project <project-id> to true (bool)
 ```
 
 For targeting rules and rollouts, use the CLI commands below when MCP has no matching rule tool. The dashboard or GraphQL (`signalRuleSet`) remains a fallback.

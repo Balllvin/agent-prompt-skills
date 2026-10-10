@@ -107,8 +107,8 @@ When the repo has `.agents/skills/pstack/`:
 - Read `HOUSE.md` before poteto-mode. House overrides win.
 - Unslop PR text and commit messages with `unslop/SKILL.md`.
 - Radical simplification still applies. Ask "can I delete this?"
-- For Marauder coding agents, model mapping lives in `.cursor/rules/pstack-models.mdc`. Every role inherits the parent model. Omit Task `model`.
-- Skip as defaults. Arena, swarm, pstack orchestrate playbook, autopilot, hillclimb. Use Marauder `/orchestrate-subagents` for parent/child splits.
+- For your repo's coding agents, model mapping lives in `.cursor/rules/pstack-models.mdc`. Every role inherits the parent model. Omit Task `model`.
+- Skip as defaults. Arena, swarm, pstack orchestrate playbook, autopilot, hillclimb. Use `/orchestrate-subagents` for parent/child splits.
 
 Steal from poteto-mode without pasting the playbooks:
 
@@ -336,4 +336,4 @@ When cleaning AI diffs, load in this order:
 - Cai et al. Architecture rules over style. Stale rules degrade compliance.
 - Weng. LLM Powered Autonomous Agents.
 - dair-ai Prompt Engineering Guide.
-- Cross-harness anti-slop. Muse, Antfu, Codex frontend-skill, Grok Build. Marauder translations live in `marauder-ui-ux`, `deslop`, `thermo-nuclear-code-quality-review`.
+- Cross-harness anti-slop. Muse, Antfu, Codex frontend-skill, Grok Build. Local translations live in `ui-ux`, `deslop` (in `build`), and `thermo-nuclear-code-quality-review` (in `audit`).

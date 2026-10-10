@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI & UX"
+  short_description: "Everything a person sees: screens, landings, copy, AI text, errors, docs"
+  default_prompt: "Use $ui-ux and CRAFT.md to design or refine a product surface with honest states, simplified flows, and working-surface craft polish."

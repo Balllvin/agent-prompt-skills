@@ -1,6 +1,6 @@
 # Notice
 
-This skill is Railway's official `use-railway` agent skill, redistributed unchanged except for the "See also" section appended to `SKILL.md`.
+This skill is Railway's official `use-railway` agent skill, redistributed unchanged except for the "See also" section appended to `SKILL.md` and an example project id in `references/tracing.md` and `references/feature-flags.md` replaced with `<project-id>`.
 
 - Upstream: https://github.com/railwayapp/railway-skills (also shipped in Railway's public editor plugin and installed by `railway skills`)
 - Copyright (c) 2026 Railway Corporation
